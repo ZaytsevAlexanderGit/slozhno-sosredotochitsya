@@ -1,144 +1,143 @@
 .page.theme_light {
-  --bg-color: #FFF1F7;
-  --title-color: #FFC2E6;
-  --accent-color: #FF8DCB;
+  --bg-color: #fff1f7;
+  --title-color: #ffc2e6;
+  --accent-color: #ff8dcb;
   --accent-color-rgb: 255, 141, 203;
   --text-color: #353430;
   --text-color-rgb: 53, 52, 48;
-  --main-background-picture:url(../images/cover-image-light.png);
+  --main-background-picture: url(../images/cover-image-light.png);
 
   .title-decor,
   .header__theme-menu-item,
-  .main__section-title{
-    color:var(--text-color);
+  .main__section-title {
+    color: var(--text-color);
   }
 
-  .header__theme-menu-button:hover{
-    outline-color:rgba(var(--text-color-rgb), 0.4);
+  .header__theme-menu-button:hover {
+    outline-color: rgba(var(--text-color-rgb), 0.4);
   }
 
-  .header__theme-menu-item:has(.header__theme-menu-button_active){
-    outline-color:var(--text-color);
+  .header__theme-menu-item:has(.header__theme-menu-button_active) {
+    outline-color: var(--text-color);
   }
 
-  .header__decoration__dark-text{
+  .header__decoration__dark-text {
     transform: scale(0);
   }
 
   .decorated-zone::before,
   .decorated-zone::after,
-  .header__theme-menu-button:focus-visible{
-  border-color: var(--text-color);
+  .header__theme-menu-button:focus-visible {
+    border-color: var(--text-color);
   }
 }
 
-
-
 @media (prefers-color-scheme: light) {
-  :root{
-    --bg-color: #FFF1F7;;
-    --title-color: #FFC2E6;
-    --accent-color: #FF8DCB;
-    --accent-color-rgb: 255, 141, 203;
-    --text-color: #353430;
-    --text-color-rgb: 53, 52, 48;
-    --main-font: 'IBM Plex mono';
-    --main-background-picture:url(../images/cover-image-light.png);
-    --overall-page-padding: 20px;
-    --footer-header-margin: 60px;
-    --main-sections-margin: 80px;
-    --pictures-gap:20px;
-  }  
-
-  .title-decor,
-  .header__theme-menu-item,
-  .main__section-title{
-    color:var(--text-color);
-  }
-
-  .header__theme-menu-button:hover{
-    outline-color:rgba(var(--text-color-rgb), 0.4);
-  }
-
-  .header__theme-menu-item:has(.header__theme-menu-button_active){
-    outline-color:var(--text-color);
-  }
-
-  .header__decoration__dark-text{
-    transform: scale(0);
-  }
-
-  .decorated-zone::before,
-  .decorated-zone::after,
-  .header__theme-menu-button:focus-visible{
-    border-color: var(--text-color);
-  }
 
   @media (width <= 768px) {
-    :root{
+    :root {
       --overall-page-padding: calc(20px - ((768px - 100vw) / (768 - 375)) * 10);
       --pictures-gap: calc(20px - ((768px - 100vw) / (768 - 375)) * 10);
       --footer-header-margin: calc(60px - ((768px - 100vw) / (768 - 375)) * 20);
       --main-sections-margin: calc(80px - ((768px - 100vw) / (768 - 375)) * 30);
-      --main-title-font:clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+      --main-title-font: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     }
-    
-    .header__theme-menu{
+
+    .header__theme-menu {
       justify-self: flex-end;
-      align-self: center
+      align-self: center;
     }
-    
-    .header__theme-menu-list{
+
+    .header__theme-menu-list {
       flex-direction: column;
     }
   }
-  
-  @media (500px <= width <= 768px){
-    .section-columns{
+
+  @media (500px <= width <= 768px) {
+    .section-columns {
       grid-template-columns: 1fr 2fr;
     }
-  
-    .section-rows{
+
+    .section-rows {
       grid-template-columns: 1fr 2fr;
     }
-  
-    .section-rows .main__section-paragraph-block{
+
+    .section-rows .main__section-paragraph-block {
       grid-column: 1 / -1;
       grid-row: auto;
     }
   }
-  
-  @media (width <= 500px){
-    .header__title{
+
+  @media (width <= 500px) {
+    .header__title {
       inset-inline-end: 0;
     }
-    
-    .section-columns{
+
+    .section-columns {
       grid-template-columns: 1fr;
     }
-  
-    .section-rows{
+
+    .section-rows {
       grid-template-columns: 1fr;
     }
-  
-    .section-columns .main__section-paragraph-block{
+
+    .section-columns .main__section-paragraph-block {
       grid-column: 1;
     }
-  
-    .section-rows .main__section-paragraph-block{
+
+    .section-rows .main__section-paragraph-block {
       grid-row: auto;
     }
-  
-    .main__section-pictures-block{
-      grid-template-areas: "image1"
-                           "image2"
-                           "image3"
-                           "image4"
-                           "image5";
+
+    .main__section-pictures-block {
+      grid-template-areas:
+        "image1"
+        "image2"
+        "image3"
+        "image4"
+        "image5";
     }
-  
-    .picture{
+
+    .picture {
       min-width: 355px;
     }
+  }
+  :root {
+    --bg-color: #fff1f7;
+    --title-color: #ffc2e6;
+    --accent-color: #ff8dcb;
+    --accent-color-rgb: 255, 141, 203;
+    --text-color: #353430;
+    --text-color-rgb: 53, 52, 48;
+    --main-font: "IBM Plex mono";
+    --main-background-picture: url(../images/cover-image-light.png);
+    --overall-page-padding: 20px;
+    --footer-header-margin: 60px;
+    --main-sections-margin: 80px;
+    --pictures-gap: 20px;
+  }
+
+  .title-decor,
+  .header__theme-menu-item,
+  .main__section-title {
+    color: var(--text-color);
+  }
+
+  .header__theme-menu-button:hover {
+    outline-color: rgba(var(--text-color-rgb), 0.4);
+  }
+
+  .header__theme-menu-item:has(.header__theme-menu-button_active) {
+    outline-color: var(--text-color);
+  }
+
+  .header__decoration__dark-text {
+    transform: scale(0);
+  }
+
+  .decorated-zone::before,
+  .decorated-zone::after,
+  .header__theme-menu-button:focus-visible {
+    border-color: var(--text-color);
   }
 }

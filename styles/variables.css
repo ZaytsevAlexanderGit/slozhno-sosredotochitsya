@@ -1,15 +1,15 @@
 :root {
   --bg-color: #000028;
-  --title-color: #DB00FF;
-  --accent-color: #FF0070;
+  --title-color: #db00ff;
+  --accent-color: #ff0070;
   --accent-color-rgb: 255, 0, 112;
-  --text-color: #F1B2CE;
+  --text-color: #f1b2ce;
   --text-color-rgb: 241, 178, 206;
-  --main-font: 'IBM Plex mono';
-  --main-title-font:clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  --main-background-picture:url(../images/cover-image-dark.png);
+  --main-font: "IBM Plex mono";
+  --main-title-font: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --main-background-picture: url(../images/cover-image-dark.png);
   --overall-page-padding: 20px;
   --footer-header-margin: 60px;
   --main-sections-margin: 80px;
-  --pictures-gap:20px;
+  --pictures-gap: 20px;
 }
