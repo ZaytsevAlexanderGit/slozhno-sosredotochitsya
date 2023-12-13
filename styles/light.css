@@ -33,7 +33,6 @@
 }
 
 @media (prefers-color-scheme: light) {
-
   @media (width <= 768px) {
     :root {
       --overall-page-padding: calc(20px - ((768px - 100vw) / (768 - 375)) * 10);
@@ -102,6 +101,7 @@
       min-width: 355px;
     }
   }
+
   :root {
     --bg-color: #fff1f7;
     --title-color: #ffc2e6;
@@ -111,10 +111,6 @@
     --text-color-rgb: 53, 52, 48;
     --main-font: "IBM Plex mono";
     --main-background-picture: url(../images/cover-image-light.png);
-    --overall-page-padding: 20px;
-    --footer-header-margin: 60px;
-    --main-sections-margin: 80px;
-    --pictures-gap: 20px;
   }
 
   .title-decor,
