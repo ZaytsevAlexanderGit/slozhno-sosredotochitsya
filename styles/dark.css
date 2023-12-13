@@ -25,7 +25,7 @@
   }
 
   .header__decoration__dark-text {
-    transform: scale(1);
+    display: flex;
   }
 
   .decorated-zone::before,

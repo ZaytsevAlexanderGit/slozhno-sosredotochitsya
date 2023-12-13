@@ -28,7 +28,7 @@
   border-inline-end: 1px solid var(--accent-color);
   border-block-start: 1px solid var(--accent-color);
   inline-size: 25px;
-  aspect-ratio: 1;
+  aspect-ratio: 1 / 1;
 }
 
 .decorated-zone::after {
@@ -39,7 +39,7 @@
   border-inline-start: 1px solid var(--accent-color);
   border-block-end: 1px solid var(--accent-color);
   inline-size: 25px;
-  aspect-ratio: 1;
+  aspect-ratio: 1 / 1;
 }
 
 .header__theme-menu {
@@ -285,6 +285,8 @@
 }
 
 @media (width <= 768px) {
+  /* Задание плавного изменения границ при ширине ниже 768px */
+
   :root {
     --overall-page-padding: calc(20px - ((768px - 100vw) / (768 - 375)) * 10);
     --pictures-gap: calc(20px - ((768px - 100vw) / (768 - 375)) * 10);
@@ -333,6 +335,10 @@
 
   .section-columns .main__section-paragraph-block {
     grid-column: 1;
+  }
+
+  .section-columns .main__section-title {
+    grid-row: 1 / span 1;
   }
 
   .section-rows .main__section-paragraph-block {
