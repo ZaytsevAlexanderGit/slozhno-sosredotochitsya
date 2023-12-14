@@ -1,3 +1,13 @@
+/* Не понимаю комментарии по обращению к темной/светлой теме.
+А имено:
+"Обращение к темной теме следует убрать, вы уже используете переменные"
+Поясните по возможности.
+Согласно изначальной структуре файлов dark и light
+.page.theme_dark/light {
+   сохраните этот селектор в приведённом виде.
+   Так стили написанные ниже будут иметь больший вес,
+   чем стили в медиазапросе предпочтений пользователя
+} */
 .page.theme_dark {
   --bg-color: #000028;
   --title-color: #db00ff;
@@ -6,4 +16,33 @@
   --text-color: #f1b2ce;
   --text-color-rgb: 241, 178, 206;
   --main-background-picture: url(../images/cover-image-dark.png);
+
+  /* Если я это убираю, то для темной темы при включеном prefers-color-scheme:light
+  берется из светлой темы а именно - --text-color */
+  .title-decor {
+    color: var(--bg-color);
+  }
+
+  .header__theme-menu-item,
+  .main__section-title {
+    color: var(--accent-color);
+  }
+
+  .header__theme-menu-button:hover {
+    outline-color: rgba(var(--accent-color-rgb), 0.4);
+  }
+
+  .header__theme-menu-item:has(.header__theme-menu-button_active) {
+    outline-color: var(--accent-color);
+  }
+
+  .header__decoration__rec-tag {
+    display: flex;
+  }
+
+  .decorated-zone::before,
+  .decorated-zone::after,
+  .header__theme-menu-button:focus-visible {
+    border-color: var(--accent-color);
+  }
 }
