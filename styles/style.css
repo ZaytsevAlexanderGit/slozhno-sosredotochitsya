@@ -156,14 +156,11 @@
 
 .main__section.section-pictures {
   margin-block-end: var(--footer-header-margin);
+  grid-template-columns: 1fr;
 }
 
 .main__section:has(.main__section-pictures-block) {
   gap: var(--pictures-gap);
-}
-
-.main__section.section-pictures {
-  grid-template-columns: 1fr;
 }
 
 .main__section-paragraph {
